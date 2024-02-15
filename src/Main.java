@@ -2,31 +2,28 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+
     public static void main(String[] args) {
 
         Figure myTriangleOne = new Figure();
-        Figure myTriangleTwo = new Figure();
-        Figure myTriangleThree = new Figure();
-        Figure myTriangleFour = new Figure();
+        Figure myTriangle = new Figure();
 
-        myTriangleTwo.height = 12;
-        myTriangleTwo.widht = 6;
-        myTriangleTwo.lenght = 6;
+        myTriangleOne.height = 7;
+        myTriangleOne.widht = 14;
+        myTriangleOne.lenght = 21;
 
+        System.out.println("My triangle one height = " + myTriangleOne.height);
+        System.out.println("My triangle one lenght = " + myTriangleOne.lenght );
+        System.out.println("My triangle one widht = " + myTriangleOne.widht );
 
+        System.out.println("Triangle  V = " + myTriangle.calculateVolume ());
+        System.out.println("Triangle  S =  " + myTriangle.calculateSquare());
 
-        System.out.println(myTriangleOne);
-
-        System.out.println("My triangle two height = " + myTriangleTwo.height );
-        System.out.println("My triangle two lenght = " + myTriangleTwo.lenght );
-        System.out.println("My triangle two widht = " + myTriangleTwo.widht );
-
-        System.out.println("Triangle three V = " + myTriangleThree.calculateVolume ());
-
-        System.out.print("Triangle four S =  " + myTriangleFour.calculateSquare());
-
+        System.out.println("My Triangle One V = " + myTriangleOne.calculateVolumeGo(7,14,21));
 
     }
+
+
 
 
 }
